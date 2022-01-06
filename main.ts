@@ -1,8 +1,8 @@
 export {}
 
 class Point {
-  x: number;
-  y: number;
+  private x: number;
+  private y: number;
 
   constructor(x?: number, y?: number) {
     this.x = x;
@@ -15,5 +15,5 @@ class Point {
   }
 }
 
-let point = new Point();
+let point = new Point(1, 2);
 point.draw();
